@@ -6,6 +6,7 @@
     "emailjs-com": "^2.6.4",
     "react": "^16.6.1",
     "react-dom": "^16.6.1",
+    "react-particles-js": "^3.4.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "2.1.1",
     "react-toastify": "^7.0.4"

@@ -1,11 +1,12 @@
 import React from "react";
 import emailjs from 'emailjs-com';
 import { toast } from 'react-toastify';
+import './ContractForm.css';
 
 export default class ContactForm extends React.Component {
   constructor(props) {
     super(props);
-    
+
     this.state = {
       name: "",
       email: "",
@@ -28,21 +29,21 @@ export default class ContactForm extends React.Component {
     //   return;
     // }
 
-  const templateParams = {
+    const templateParams = {
       from_name: this.state.name + " (" + this.state.email + ")",
       to_name: 'Anne',
       content: this.state.content
-  };
+    };
 
-  const env = process.env || {}
-  emailjs.send(env.REACT_APP_EMAIL_SERVICE_ID, env.REACT_APP_EMAIL_TEMPLATE_ID, templateParams, env.REACT_APP_EMAIL_USER_ID)
-          .then(function(response) {
-          toast.success("Sua mensagem foi enviada!", {
-            position: toast.POSITION.TOP_CENTER
-          });
-          console.log("SUCESSO!", response.status, response.text);
-        },
-        function(err) {
+    const env = process.env || {}
+    emailjs.send(env.REACT_APP_EMAIL_SERVICE_ID, env.REACT_APP_EMAIL_TEMPLATE_ID, templateParams, env.REACT_APP_EMAIL_USER_ID)
+      .then(function (response) {
+        toast.success("Sua mensagem foi enviada!", {
+          position: toast.POSITION.TOP_CENTER
+        });
+        console.log("SUCESSO!", response.status, response.text);
+      },
+        function (err) {
           toast.error("Não foi possível enviar a sua mensagem.");
         }
       );
@@ -56,7 +57,7 @@ export default class ContactForm extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="contact">
         <form
           className="ui form"
           id={this.props.id}
@@ -64,50 +65,78 @@ export default class ContactForm extends React.Component {
           method={this.props.method}
           action={this.props.action}
         >
-          <textarea
-            id="name"
-            name="name"
-            onChange={this.handleInputChange.bind(this)}
-            placeholder="Seu nome"
-            required
-            value={this.state.name}
-            style={{ width: "100%" }}
-            rows={1}
-          />
-          <br />
-          <textarea
-            id="email"
-            name="email"
-            onChange={this.handleInputChange.bind(this)}
-            placeholder="Seu e-mail"
-            required
-            value={this.state.email}
-            // error={this.state.errors.email}
-            style={{ width: "100%" }}
-            rows={1}
-          />
-          <br />
-          <textarea
-            id="content"
-            name="content"
-            onChange={this.handleInputChange.bind(this)}
-            placeholder="Mensagem"
-            required
-            value={this.state.content}
-            style={{ width: "100%", height: "250px" }}
-          />
-          <br />
-          <input
-            type="button"
-            value="Enviar mensagem!"
-            className="ui button"
-            style={{
-              fontFamily: "Amatic SC",
-              fontSize: "20px",
-              color: "blue"
-            }}
-            onClick={this.sendMessage.bind(this)}
-          />
+          <div className="row">
+            <div className="field">
+              <div className="label">
+                <label>Nome *</label>
+              </div>
+                <input
+                  id="name"
+                  name="name"
+                  type="text"
+                  onChange={this.handleInputChange.bind(this)}
+                  required
+                  value={this.state.name}
+                  rows={1}
+                  className="input"
+                />
+            </div>
+            <div className="field">
+              <div className="label">
+                <label>E-mail *</label>
+              </div>
+                <input
+                  id="email"
+                  name="email"
+                  type="text"
+                  onChange={this.handleInputChange.bind(this)}
+                  required
+                  value={this.state.email}
+                  //error={this.state.errors.email}
+                  rows={1}
+                  className="input"
+                />
+              </div>
+          </div>
+
+          <div className="row">
+            <div className="field">
+              <div className="label">
+                <label>Mensagem *</label>
+              </div>
+              <textarea
+                id="content"
+                name="content"
+                className="input"
+                type="text"
+                onChange={this.handleInputChange.bind(this)}
+                required
+                value={this.state.content}
+                rows={4}
+                spellcheck="false"
+              />
+            </div>
+          </div>
+
+          <div className="row">
+
+            <div className="field">
+
+              <input
+                type="button"
+                value="Enviar mensagem!"
+                className="ui button"
+                style={{
+                  fontFamily: "Amatic SC",
+                  fontSize: "20px",
+                  color: "blue"
+                }}
+                onClick={this.sendMessage.bind(this)}
+              />
+            </div>
+
+          </div>
+
         </form>
       </div>
     );
