@@ -1,4 +1,5 @@
 import React from "react";
+import ContactForm from '../Contact/ContactForm';
 
 const Contact = () => (
   <div>
@@ -9,6 +10,7 @@ const Contact = () => (
       et ultrices posuere cubilia curae; Duis consequat nulla ac ex consequat,
       in efficitur arcu congue. Nam fermentum commodo egestas.
     </p>
+    <ContactForm/>
   </div>
 );
 
