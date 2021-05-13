@@ -3,6 +3,7 @@ import MeImg from "../../assets/me.png"
 import './Home.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSpotify, faGithubAlt, faLinkedin, faTelegramPlane } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const Home = () => (
   <div className="home">
@@ -21,6 +22,9 @@ const Home = () => (
         </a>
         <a rel="noopener noreferrer" href='https://open.spotify.com/user/anne.carvalho/' target="_blank" title="Spotify">
             <FontAwesomeIcon icon={faSpotify} />
+        </a>
+        <a rel="noopener noreferrer" href='/contact' title="Email">
+            <FontAwesomeIcon icon={faEnvelope} />
         </a>
     </div>
 
