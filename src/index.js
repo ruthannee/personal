@@ -3,14 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import { BrowserRouter, Route, Redirect, Switch } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 
 const routes = (
     <BrowserRouter>
-      <Switch>
-        <Route path="/" component={App} />
-        <Redirect from="/" to="/" />
-      </Switch>
+      <App/>
     </BrowserRouter>
   );
 
