@@ -20,10 +20,10 @@ function TabsFooter() {
         <div>
             <div className="links">
                 <Link to={`/`} className="link" onClick={() => setOpen(!isOpen)}>Home</Link>
-                <Link to={`/about`} className="link" onClick={() => setOpen(!isOpen)}>About</Link>
+                <Link to={`/about`} className="link" onClick={() => setOpen(!isOpen)}>Sobre</Link>
                 {/* <Link to={`/skills`} className="link" onClick={() => setOpen(!isOpen)}>Skills</Link> */}
-                <Link to={`/curriculum`} className="link" onClick={() => setOpen(!isOpen)}>Curriculum</Link>
-                <Link to={`/contact`} className="link" onClick={() => setOpen(!isOpen)}>Contact</Link>
+                <Link to={`/curriculum`} className="link" onClick={() => setOpen(!isOpen)}>Currículo</Link>
+                <Link to={`/contact`} className="link" onClick={() => setOpen(!isOpen)}>Contato</Link>
             </div>
             <div className="tabs">
                 <Switch>
