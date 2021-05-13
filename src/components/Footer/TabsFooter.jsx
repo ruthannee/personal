@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link, Switch, Route } from 'react-router-dom';
 import Inicio from '../Home/Home';
 import Sobre from '../About/About';
-import Habilidades from '../Skills/Skills';
+// import Habilidades from '../Skills/Skills';
 import Curriculo from '../Curriculum/Curriculum';
 import Contato from '../Contact/Contact';
 import './TabsFooter.css';
@@ -12,7 +12,7 @@ function TabsFooter() {
 
     const Home = () => <Inicio/>;
     const About = () => <Sobre/>;
-    const Skills = () => <Habilidades/>;
+    // const Skills = () => <Habilidades/>;
     const Curriculum = () => <Curriculo/>;
     const Contact = () => <Contato/>;
     

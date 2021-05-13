@@ -10,16 +10,16 @@ const Home = () => (
     <h1 className="name">Ruth Anne</h1>
 
     <div className="icons">
-        <a href='https://t.me/ruthanne' target="_blank" title="Telegram">
+        <a rel="noopener noreferrer" href='https://t.me/ruthanne/' target="_blank" title="Telegram">
             <FontAwesomeIcon icon={faTelegramPlane}/>
         </a>
-        <a href='https://github.com/ruthannee' target="_blank" title="Github">
+        <a rel="noopener noreferrer" href='https://github.com/ruthannee/' target="_blank" title="Github">
             <FontAwesomeIcon icon={faGithubAlt} />
         </a>
-        <a href='https://www.linkedin.com/in/anne-carvalho/' target="_blank" title="LinkedIn">
+        <a rel="noopener noreferrer" href='https://www.linkedin.com/in/anne-carvalho/' target="_blank" title="LinkedIn">
             <FontAwesomeIcon icon={faLinkedin} />
         </a>
-        <a href='https://open.spotify.com/user/anne.carvalho' target="_blank" title="Spotify">
+        <a rel="noopener noreferrer" href='https://open.spotify.com/user/anne.carvalho/' target="_blank" title="Spotify">
             <FontAwesomeIcon icon={faSpotify} />
         </a>
     </div>
