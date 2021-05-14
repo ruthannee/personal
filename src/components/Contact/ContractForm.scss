@@ -1,5 +1,6 @@
 $white: #ffffff;
 $orange: #ff8800;
+$disabled: #efb28f;
 
 .row{
     display: flex;
@@ -37,6 +38,12 @@ form{
 textarea{
     resize: vertical;
 }
+input[type=button]:disabled{
+    background: $disabled;
+    color: $white;
+    font-weight: 400;
+    border: 3px solid $disabled;
+}
 
 $colors: (submit: $orange);
 @each $button, $color in $colors {
@@ -57,14 +64,14 @@ $colors: (submit: $orange);
     padding: 1em 2em;
     color: var(--color);
     transition: 0.25s;
-    box-shadow: 0 0 2px 0 #fff;
+    box-shadow: 0 0 2px 0 $white;
 
     &:hover,
     &:focus { 
         border-color: var(--hover);
-        box-shadow: 0 0 4px 0 #fff;
+        box-shadow: 0 0 4px 0 $white;
         background: $orange;
-        color: #fff;
+        color: $white;
     }
 }
 .Toastify__toast--warning {
