@@ -1,6 +1,7 @@
 import React from "react";
 // import emailjs from 'emailjs-com';
-// import { toast } from 'react-toastify';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.min.css'; 
 import './ContractForm.scss';
 
 export default class ContactForm extends React.Component {
@@ -8,9 +9,9 @@ export default class ContactForm extends React.Component {
     super(props);
 
     this.state = {
-      name: "",
-      email: "",
-      content: "",
+      name: '',
+      email: '',
+      content: '',
     };
   }
 
@@ -25,9 +26,18 @@ export default class ContactForm extends React.Component {
 
   sendMessage(event) {
     event.preventDefault();
-    // if (!this.validateMail()) {
-    //   return;
-    // }
+
+    if (this.state.name === (null || '') || this.state.email === (null || '') || 
+        this.state.content === (null || '')) {
+      toast.warning('Preencha todos os campos', {autoClose:4000})
+      return false;
+    }
+
+    var pattern = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
+    if (!pattern.test(this.state.email)) {
+      toast.warning('E-mail inválido', {autoClose:4000})
+      return false;
+    }
 
     // const templateParams = {
     //   from_name: this.state.name + " (" + this.state.email + ")",
@@ -47,13 +57,13 @@ export default class ContactForm extends React.Component {
     //       toast.error("Não foi possível enviar a sua mensagem.");
     //     }
     //   );
-    console.log("MANDOOOOOOOOOOOOOOOU")
 
     this.setState({
       name: "",
       email: "",
       content: ""
     });
+    console.log("Email enviado com sucesso!")
   }
 
   render() {
@@ -114,7 +124,6 @@ export default class ContactForm extends React.Component {
                 required
                 value={this.state.content}
                 rows={4}
-                spellcheck="false"
               />
             </div>
           </div>
@@ -122,12 +131,13 @@ export default class ContactForm extends React.Component {
           <div className="row">
 
             <div className="field">
-
-              <button
+              <ToastContainer />
+              <input
+                type="button"
                 value="Enviar"
                 className="submit"
                 onClick={this.sendMessage.bind(this)}
-              >Enviar</button>
+              />
             </div>
 
           </div>
