@@ -1,6 +1,6 @@
 import React from "react";
-import emailjs from 'emailjs-com';
-import { toast } from 'react-toastify';
+// import emailjs from 'emailjs-com';
+// import { toast } from 'react-toastify';
 import './ContractForm.scss';
 
 export default class ContactForm extends React.Component {
@@ -29,11 +29,11 @@ export default class ContactForm extends React.Component {
     //   return;
     // }
 
-    const templateParams = {
-      from_name: this.state.name + " (" + this.state.email + ")",
-      to_name: 'Anne',
-      content: this.state.content
-    };
+    // const templateParams = {
+    //   from_name: this.state.name + " (" + this.state.email + ")",
+    //   to_name: 'Anne',
+    //   content: this.state.content
+    // };
 
     // const env = process.env || {}
     // emailjs.send(env.REACT_APP_EMAIL_SERVICE_ID, env.REACT_APP_EMAIL_TEMPLATE_ID, templateParams, env.REACT_APP_EMAIL_USER_ID)
