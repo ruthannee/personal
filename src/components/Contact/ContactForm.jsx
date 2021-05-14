@@ -1,7 +1,7 @@
 import React from "react";
 import emailjs from 'emailjs-com';
 import { toast } from 'react-toastify';
-import './ContractForm.css';
+import './ContractForm.scss';
 
 export default class ContactForm extends React.Component {
   constructor(props) {
@@ -35,18 +35,19 @@ export default class ContactForm extends React.Component {
       content: this.state.content
     };
 
-    const env = process.env || {}
-    emailjs.send(env.REACT_APP_EMAIL_SERVICE_ID, env.REACT_APP_EMAIL_TEMPLATE_ID, templateParams, env.REACT_APP_EMAIL_USER_ID)
-      .then(function (response) {
-        toast.success("Sua mensagem foi enviada!", {
-          position: toast.POSITION.TOP_CENTER
-        });
-        console.log("SUCESSO!", response.status, response.text);
-      },
-        function (err) {
-          toast.error("Não foi possível enviar a sua mensagem.");
-        }
-      );
+    // const env = process.env || {}
+    // emailjs.send(env.REACT_APP_EMAIL_SERVICE_ID, env.REACT_APP_EMAIL_TEMPLATE_ID, templateParams, env.REACT_APP_EMAIL_USER_ID)
+    //   .then(function (response) {
+    //     toast.success("Sua mensagem foi enviada!", {
+    //       position: toast.POSITION.TOP_CENTER
+    //     });
+    //     console.log("SUCESSO!", response.status, response.text);
+    //   },
+    //     function (err) {
+    //       toast.error("Não foi possível enviar a sua mensagem.");
+    //     }
+    //   );
+    console.log("MANDOOOOOOOOOOOOOOOU")
 
     this.setState({
       name: "",
@@ -122,17 +123,11 @@ export default class ContactForm extends React.Component {
 
             <div className="field">
 
-              <input
-                type="button"
-                value="Enviar mensagem!"
-                className="ui button"
-                style={{
-                  fontFamily: "Amatic SC",
-                  fontSize: "20px",
-                  color: "blue"
-                }}
+              <button
+                value="Enviar"
+                className="submit"
                 onClick={this.sendMessage.bind(this)}
-              />
+              >Enviar</button>
             </div>
 
           </div>
