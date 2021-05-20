@@ -19,7 +19,7 @@ function TabsFooter() {
     return (
         <div>
             <div className="links">
-                <NavLink id="link" to={`/ `} onClick={() => setOpen(!isOpen)} activeClassName="activeClass">Home</NavLink>
+                <NavLink id="link" exact to={`/`} onClick={() => setOpen(!isOpen)} activeClassName="activeClass">Home</NavLink>
                 <NavLink id="link" to={`/about`} onClick={() => setOpen(!isOpen)} activeClassName="activeClass">Sobre</NavLink>
                 {/* <NavLink id="link" to={`/skills`} onClick={() => setOpen(!isOpen)} activeClassName="activeClass">Skills</NavLink> */}
                 <NavLink id="link" to={`/curriculum`} onClick={() => setOpen(!isOpen)} activeClassName="activeClass">Currículo</NavLink>
@@ -27,7 +27,7 @@ function TabsFooter() {
             </div>
             <div className="tabs">
                 <Switch>
-                    <Route exact path={`/ `} component={Home} />
+                    <Route exact path={`/`} component={Home} />
                     <Route exact path={`/about`} component={About} />
                     {/* <Route exact path={`/skills`} component={Skills} /> */}
                     <Route exact path={`/curriculum`} component={Curriculum} />
