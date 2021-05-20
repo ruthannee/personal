@@ -15,7 +15,11 @@
     transition: all 0.2s ease;
 }
 #link:hover, #link:focus{
-    transform: scale(2);
+    transform: scale(1.5);
+    border-bottom: 3px solid #ff8800;
+    border-radius: 5px;
+}
+.activeClass{
     border-bottom: 3px solid #ff8800;
     border-radius: 5px;
 }

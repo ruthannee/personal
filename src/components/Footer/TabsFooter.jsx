@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link, Switch, Route } from 'react-router-dom';
+import { NavLink, Switch, Route } from 'react-router-dom';
 import Inicio from '../Home/Home';
 import Sobre from '../About/About';
 // import Habilidades from '../Skills/Skills';
@@ -19,15 +19,15 @@ function TabsFooter() {
     return (
         <div>
             <div className="links">
-                <Link id="link" to={`/`} onClick={() => setOpen(!isOpen)}>Home</Link>
-                <Link id="link" to={`/about`} onClick={() => setOpen(!isOpen)}>Sobre</Link>
-                {/* <Link id="link" to={`/skills`} onClick={() => setOpen(!isOpen)}>Skills</Link> */}
-                <Link id="link" to={`/curriculum`} onClick={() => setOpen(!isOpen)}>Currículo</Link>
-                <Link id="link" to={`/contact`} onClick={() => setOpen(!isOpen)}>Contato</Link>
+                <NavLink id="link" to={`/ `} onClick={() => setOpen(!isOpen)} activeClassName="activeClass">Home</NavLink>
+                <NavLink id="link" to={`/about`} onClick={() => setOpen(!isOpen)} activeClassName="activeClass">Sobre</NavLink>
+                {/* <NavLink id="link" to={`/skills`} onClick={() => setOpen(!isOpen)} activeClassName="activeClass">Skills</NavLink> */}
+                <NavLink id="link" to={`/curriculum`} onClick={() => setOpen(!isOpen)} activeClassName="activeClass">Currículo</NavLink>
+                <NavLink id="link" to={`/contact`} onClick={() => setOpen(!isOpen)} activeClassName="activeClass">Contato</NavLink>
             </div>
             <div className="tabs">
                 <Switch>
-                    <Route exact path={`/`} component={Home} />
+                    <Route exact path={`/ `} component={Home} />
                     <Route exact path={`/about`} component={About} />
                     {/* <Route exact path={`/skills`} component={Skills} /> */}
                     <Route exact path={`/curriculum`} component={Curriculum} />
