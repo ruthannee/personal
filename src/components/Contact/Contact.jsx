@@ -3,7 +3,7 @@ import ContactForm from '../Contact/ContactForm';
 
 const Contact = () => (
   <div>
-    <h1>Obrigada por entrar em contato! <br/> Como posso te ajudar?</h1>
+    <h1 id="h1-contact">Obrigada por entrar em contato! <br/> Como posso te ajudar?</h1>
     <ContactForm/>
   </div>
 );

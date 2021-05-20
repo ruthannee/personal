@@ -1,3 +1,5 @@
+$white: #ffffff;
+
 .home{
     padding: 4rem;
     padding-bottom: 0;
@@ -7,7 +9,7 @@
     max-width: 300px;
     z-index: -5;
     border-radius: 50%;
-    box-shadow: 0 0 20px 0 #ffffff;
+    box-shadow: 0 0 20px 0 $white;
 }
 .name{
     font-family: 'Mali', cursive;
@@ -15,10 +17,9 @@
     margin: 0rem;
 }
 .icons, .icons a {
-    color: #ffffff;
+    color: $white;
     font-size: 40px;
     margin-top: 2rem;
-    
 }
 .icons svg {
     margin: 0.8rem;

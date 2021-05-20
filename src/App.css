@@ -15,26 +15,25 @@ h1 {
   font-size: 40px;
   color: white;
   margin: 2%;
-  line-height: 50px;
+  line-height: 50px
+}
+#h1-title{
+  font-size: 40px;
+  color: white;
+  margin: 2%;
+  text-align: left;
 }
 h2 {
   margin-top: 1.5em;
   color: white;
 }
-p {
-  font-size: 16px;
+p{
   color: white;
-}
-a {
-  /* border-bottom: 1px solid white; */
-  color: #fff;
-  cursor: pointer;
-  text-decoration: none;
-  transition: all 0.2s ease;
-}
-a:hover {
-  color: #0076ff;
-  border-bottom: 1px solid #0076ff;
+  font-size: 22px;
+  font-family: "Eurostile", sans-serif;
+  width: 700px;
+  margin: 0px 0px 0 25px;
+  text-align: justify;
 }
 code,
 pre {
@@ -46,4 +45,7 @@ pre {
 code:before,
 code:after {
   content: '\`';
+}
+.div-all{
+  padding: 35px;
 }
