@@ -19,11 +19,11 @@ function TabsFooter() {
     return (
         <div>
             <div className="links">
-                <Link to={`/`} className="link" onClick={() => setOpen(!isOpen)}>Home</Link>
-                <Link to={`/about`} className="link" onClick={() => setOpen(!isOpen)}>Sobre</Link>
-                {/* <Link to={`/skills`} className="link" onClick={() => setOpen(!isOpen)}>Skills</Link> */}
-                <Link to={`/curriculum`} className="link" onClick={() => setOpen(!isOpen)}>Currículo</Link>
-                <Link to={`/contact`} className="link" onClick={() => setOpen(!isOpen)}>Contato</Link>
+                <Link id="link" to={`/`} onClick={() => setOpen(!isOpen)}>Home</Link>
+                <Link id="link" to={`/about`} onClick={() => setOpen(!isOpen)}>Sobre</Link>
+                {/* <Link id="link" to={`/skills`} onClick={() => setOpen(!isOpen)}>Skills</Link> */}
+                <Link id="link" to={`/curriculum`} onClick={() => setOpen(!isOpen)}>Currículo</Link>
+                <Link id="link" to={`/contact`} onClick={() => setOpen(!isOpen)}>Contato</Link>
             </div>
             <div className="tabs">
                 <Switch>
@@ -37,6 +37,5 @@ function TabsFooter() {
         </div>
     )
 }
-
 
 export default TabsFooter;

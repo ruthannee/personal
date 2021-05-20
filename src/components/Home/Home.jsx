@@ -1,6 +1,6 @@
 import React from "react";
 import MeImg from "../../assets/me.png"
-import './Home.css';
+import './Home.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSpotify, faGithubAlt, faLinkedin, faTelegramPlane } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
