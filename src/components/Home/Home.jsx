@@ -8,7 +8,10 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 const Home = () => (
   <div className="home">
     <img src={MeImg} alt="me" className="image"/>
+    
     <h1 className="name">Ruth Anne</h1>
+
+    <h4 className="dev">/developer</h4>
 
     <div className="icons">
         <a rel="noopener noreferrer" href='https://t.me/ruthanne/' target="_blank" title="Telegram">

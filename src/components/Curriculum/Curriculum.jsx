@@ -2,7 +2,7 @@ import React from "react";
 
 const Curriculum = () => (
   <div className="div-all">
-    <h1 id="h1-title">This is the Curriculum Page</h1>
+    <h1 id="h1-title">Curriculum Page</h1>
     <p>
       Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
       inceptos himenaeos. Vestibulum ante ipsum primis in faucibus orci luctus

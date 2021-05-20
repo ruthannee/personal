@@ -1,7 +1,9 @@
 $white: #ffffff;
+$orange: #ff8800;
+$mali-cursive: 'Mali', cursive;
 
 .home{
-    padding: 4rem;
+    padding: 3rem;
     padding-bottom: 0;
     display: inline-table;
 }
@@ -12,20 +14,27 @@ $white: #ffffff;
     box-shadow: 0 0 20px 0 $white;
 }
 .name{
-    font-family: 'Mali', cursive;
+    font-family: $mali-cursive;
     font-weight: 400;
     margin: 0rem;
+}
+.dev{
+    color: $white;
+    font-size: 20px;
+    font-weight: normal;
+    margin: 1px;
+    font-family: $mali-cursive;
 }
 .icons, .icons a {
     color: $white;
     font-size: 40px;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 .icons svg {
     margin: 0.8rem;
 }
 .icons svg:hover, .icons a:hover{
-    color: #ff8800;
+    color: $orange;
     transition: 2s, 2s, 2s;
     transform: rotate(360deg);
     transition-duration: 0.5s;
