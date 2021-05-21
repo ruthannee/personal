@@ -1,8 +1,9 @@
 import React from "react";
 import './About.scss';
+import CustomScrollbar from '../CustomScrollbar/CustomScrollbar';
 
 const About = () => (
-
+    <CustomScrollbar>
     <div className="div-all">
         <h1 id="h1-title">Sobre</h1>
         <div className='div-left'>
@@ -28,6 +29,7 @@ const About = () => (
         </p>
         </div>
     </div>
+    </CustomScrollbar>
 );
 
 export default About;

@@ -26,7 +26,7 @@ function TabsFooter() {
                 <NavLink id="link" to={`/contact`} onClick={() => setOpen(!isOpen)} activeClassName="activeClass">Contato</NavLink>
             </div>
             <div className="tabs">
-                <Switch style="overflow:hidden;">
+                <Switch className="ov-hidden">
                     <Route exact path={`/`} component={Home} />
                     <Route exact path={`/about`} component={About} />
                     {/* <Route exact path={`/skills`} component={Skills} /> */}
