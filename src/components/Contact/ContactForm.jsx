@@ -39,6 +39,14 @@ export default class ContactForm extends React.Component {
       return false;
     }
 
+    var onlyLetters = new RegExp(/^[a-zA-Z_]+( [a-zA-Z_]+)*$/g);
+    if (!onlyLetters.test(this.state.name)) {
+      toast.warning('Caractere(s) inválido(s) no campo NOME.', {
+        autoClose:4000, 
+        position: toast.POSITION.TOP_CENTER})
+      return false;
+    }
+
     var pattern = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
     if (!pattern.test(this.state.email)) {
       toast.warning('E-mail inválido', {
@@ -152,7 +160,7 @@ export default class ContactForm extends React.Component {
               <input
                 id='submit'
                 name='submit'
-                type='button'
+                type='submit'
                 value='Enviar'
                 className='submit'
                 onClick={this.sendMessage.bind(this)}

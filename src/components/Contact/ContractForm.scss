@@ -44,7 +44,7 @@ form{
 textarea{
     resize: vertical;
 }
-input[type=button]:disabled{
+input[type=submit]:disabled{
     background: $disabled;
     color: $white;
     font-weight: 400;
@@ -52,8 +52,8 @@ input[type=button]:disabled{
 }
 
 $colors: (submit: $orange);
-@each $button, $color in $colors {
-    .#{$button} {
+@each $submit, $color in $colors {
+    .#{$submit} {
       --color: #{$color};
       --hover: #{adjust-hue($color, 360deg)};
     }
