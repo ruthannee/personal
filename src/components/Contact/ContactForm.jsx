@@ -2,6 +2,7 @@ import React from "react";
 // import emailjs from 'emailjs-com';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.min.css'; 
+import { Button } from '@material-ui/core';
 import './ContractForm.scss';
 
 export default class ContactForm extends React.Component {
@@ -155,16 +156,13 @@ export default class ContactForm extends React.Component {
 
           <div className="row">
 
-            <div className="field">
+            <div className="field" style={{textAlign: 'right'}}>
               <ToastContainer />
-              <input
-                id='submit'
+              <Button id='submit'
                 name='submit'
-                type='submit'
-                value='Enviar'
-                className='submit'
-                onClick={this.sendMessage.bind(this)}
-              />
+                type='submit' 
+                variant="outlined"
+                onClick={this.sendMessage.bind(this)}>Enviar</Button>
             </div>
 
           </div>

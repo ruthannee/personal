@@ -1,6 +1,5 @@
 $white: #ffffff;
 $orange: #ff8800;
-$disabled: #efb28f;
 
 .row{
     display: flex;
@@ -23,7 +22,6 @@ $disabled: #efb28f;
     box-sizing: border-box;
     margin: 0;
     border: 2px solid $orange;
-    box-shadow: 0 0 4px 0 $white;
 }
 .field {
     padding: 0.5rem;
@@ -43,42 +41,6 @@ form{
 }
 textarea{
     resize: vertical;
-}
-input[type=submit]:disabled{
-    background: $disabled;
-    color: $white;
-    font-weight: 400;
-    border: 3px solid $disabled;
-}
-
-$colors: (submit: $orange);
-@each $submit, $color in $colors {
-    .#{$submit} {
-      --color: #{$color};
-      --hover: #{adjust-hue($color, 360deg)};
-    }
-}
-.submit {  
-    float: right;
-    font-family: "Amatic SC";
-    width: 130px;
-    background: none;
-    border: 3px solid;
-    border-radius: 7px;
-    font: inherit;
-    line-height: 0;
-    padding: 1em 2em;
-    color: var(--color);
-    transition: 0.25s;
-    box-shadow: 0 0 2px 0 $white;
-
-    &:hover,
-    &:focus { 
-        border-color: var(--hover);
-        box-shadow: 0 0 4px 0 $white;
-        background: $orange;
-        color: $white;
-    }
 }
 .Toastify__toast--warning {
     background: $orange;
