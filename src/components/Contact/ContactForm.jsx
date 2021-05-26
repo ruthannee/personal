@@ -13,6 +13,7 @@ export default class ContactForm extends React.Component {
       name: '',
       email: '',
       content: '',
+      disabled: false
     };
   }
 
@@ -26,7 +27,7 @@ export default class ContactForm extends React.Component {
   }
 
   disableFields() {
-    document.getElementById('submit').disabled = true;
+    this.setState( {disabled: !this.state.disabled} )
   }
 
   sendMessage(event) {
@@ -163,9 +164,11 @@ export default class ContactForm extends React.Component {
             <div className="field" style={{ textAlign: 'right' }}>
               <Button id='submit'
                 name='submit'
-                type='submit'
+                type='button'
                 variant="outlined"
-                onClick={this.sendMessage.bind(this)}>Enviar</Button>
+                onClick={this.sendMessage.bind(this)}
+                disabled = {(this.state.disabled) ? true : false}>
+                  Enviar</Button>
             </div>
 
           </div>
