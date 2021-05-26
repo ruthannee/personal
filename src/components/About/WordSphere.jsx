@@ -70,8 +70,7 @@ export default function WordSphere(canvas, words, counts, options) {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
     let ix = 0,
-      iz = 0,
-      i = 1;
+      iz = 0;
     for (const text of words) {
       const degZ = (π / (counts.length - 1)) * iz;
       const degX = (2 * π / counts[iz]) * ix;
@@ -97,7 +96,6 @@ export default function WordSphere(canvas, words, counts, options) {
         iz++;
         ix = counts[iz] - 1;
       }
-      i++;
     }
   }
 
