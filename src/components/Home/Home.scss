@@ -36,7 +36,6 @@ $mali-cursive: 'Mali', cursive;
 .icons svg:hover, .icons a:hover{
     color: $orange;
     transition: 2s, 2s, 2s;
-    transform: rotate(360deg);
     transition-duration: 0.5s;
     cursor: pointer;
     border-bottom: none;

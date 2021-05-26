@@ -25,7 +25,7 @@ const Curriculum = () => (
           borderRadius: 5,
           border: 0,
           width: '100%',
-          height: 530
+          height: '800px'
         }} />
     </div>
   </CustomScrollbar>
