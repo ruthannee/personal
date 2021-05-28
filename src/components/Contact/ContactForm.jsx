@@ -1,5 +1,5 @@
 import React from "react";
-// import emailjs from 'emailjs-com';
+import emailjs from 'emailjs-com';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.min.css';
 import { Button } from '@material-ui/core';
@@ -25,11 +25,7 @@ export default class ContactForm extends React.Component {
 
     this.setState({ [name]: value });
   }
-
-  disableFields() {
-    this.setState( {disabled: !this.state.disabled} )
-  }
-
+  
   sendMessage(event) {
     event.preventDefault();
 
@@ -60,40 +56,40 @@ export default class ContactForm extends React.Component {
       return false;
     }
 
-    this.disableFields();
+    const templateParams = {
+      from_name: this.state.name + " (" + this.state.email + ")",
+      to_name: 'Anne',
+      content: this.state.content
+    };
 
-    // const templateParams = {
-    //   from_name: this.state.name + " (" + this.state.email + ")",
-    //   to_name: 'Anne',
-    //   content: this.state.content
-    // };
-
-    // const env = process.env || {}
-    // emailjs.send(env.REACT_APP_EMAIL_SERVICE_ID, env.REACT_APP_EMAIL_TEMPLATE_ID, templateParams, env.REACT_APP_EMAIL_USER_ID)
-    //   .then(function (response) {
-    //     toast.success("Mensagem enviada com sucesso!", {
-    //       position: toast.POSITION.TOP_CENTER
-    //     });
-    //     console.log("SUCESSO!", response.status, response.text);
-    //       return true;
-    //   },
-    //     function (err) {
-    //       toast.error('Não foi possível enviar a sua mensagem.', {
-    //         autoClose:4000,  
-    //         position: toast.POSITION.TOP_CENTER
-    //     });
-    //       return false;
-    //     }
-    //   );
-
-    this.setState({
-      name: "",
-      email: "",
-      content: ""
-    });
-    toast.success("Mensagem enviada com sucesso", {
-      position: toast.POSITION.TOP_CENTER
-    });
+    const env = process.env || {}
+    emailjs.send(env.REACT_APP_EMAIL_SERVICE_ID, env.REACT_APP_EMAIL_TEMPLATE_ID, templateParams, env.REACT_APP_EMAIL_USER_ID)
+      .then((response) => {
+        toast.success("Mensagem enviada com sucesso!", {
+          position: toast.POSITION.TOP_CENTER
+        });
+        this.setState({
+          name: "",
+          email: "",
+          content: "",
+          disabled: true,
+        });
+        console.log("SUCESSO!", response.status, response.text);
+        return true;
+      },
+        (err) => {
+          toast.error('Não foi possível enviar a sua mensagem.', {
+            autoClose: 4000,
+            position: toast.POSITION.TOP_CENTER
+          });
+          this.setState({
+            name: this.state.name,
+            email: this.state.email,
+            content: this.state.content,
+          });
+          return false;
+        }
+      );
   }
 
   render() {
@@ -167,8 +163,8 @@ export default class ContactForm extends React.Component {
                 type='button'
                 variant="outlined"
                 onClick={this.sendMessage.bind(this)}
-                disabled = {(this.state.disabled) ? true : false}>
-                  Enviar</Button>
+                disabled={(this.state.disabled) ? true : false}>
+                Enviar</Button>
             </div>
 
           </div>
