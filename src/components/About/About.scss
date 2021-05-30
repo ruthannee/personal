@@ -1,0 +1,21 @@
+$white: #ffffff;
+$orange: #ff8800;
+
+.div-left{
+    float: left;
+    color: $white;
+    padding-bottom: 25px;
+    max-width: 660px;
+}
+.div-right{
+    float: right;
+    color: $white;
+}
+#ref{
+    color: $orange;
+    text-decoration: none;
+}
+#ref:hover{
+    color: $orange;
+    text-decoration: none;
+}

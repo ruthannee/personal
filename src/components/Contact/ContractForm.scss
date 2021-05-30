@@ -1,0 +1,47 @@
+$white: #ffffff;
+$orange: #ff8800;
+
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+.label{
+    font-weight: 400;
+    font-family: "Eurostile", sans-serif;
+    font-size: 1.4rem;
+    color: $white;
+    width: 100%;
+    text-align: left;
+}
+.input{
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 4%;
+    border-radius: 3px;
+    flex: 1;
+    box-sizing: border-box;
+    margin: 0;
+    border: 2px solid $orange;
+}
+.field {
+    padding: 0.5rem;
+    flex: 1;
+}
+#h1-contact {
+    font-size: 40px;
+    color: white;
+    margin: 2%;
+    line-height: 50px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+    margin: auto;
+}
+textarea{
+    resize: vertical;
+}
+.Toastify__toast--warning {
+    background: $orange;
+}

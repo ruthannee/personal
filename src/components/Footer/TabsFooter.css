@@ -1,0 +1,37 @@
+.links {
+    /* margin-bottom: 1%; */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 22px;
+    box-shadow: 0px -7px 15px 8px #0000007d;
+    padding: 1rem 0 ;
+}
+#link {
+    margin: 0 10px;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+#link:hover, #link:focus{
+    transform: scale(1.5);
+    border-bottom: 3px solid #ff8800;
+    border-radius: 5px;
+}
+.activeClass{
+    border-bottom: 3px solid #ff8800;
+    border-radius: 5px;
+}
+.tabs {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    height: 88%;
+    overflow: hidden;
+    width: 100%;
+    box-sizing: border-box;
+}
+.ov-hidden{
+    overflow: hidden;
+}
