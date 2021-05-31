@@ -150,6 +150,7 @@ export default class ContactForm extends React.Component {
                 required
                 value={this.state.content}
                 rows={4}
+                maxLength={765}
               />
             </div>
           </div>

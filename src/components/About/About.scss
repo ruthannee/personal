@@ -19,3 +19,10 @@ $orange: #ff8800;
     color: $orange;
     text-decoration: none;
 }
+@media screen and (max-width: 530px){
+    .div-right{
+        float: none;
+        clear: left;
+        margin: -8px;
+    }
+}

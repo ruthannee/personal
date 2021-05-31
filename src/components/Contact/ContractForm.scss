@@ -33,6 +33,23 @@ $orange: #ff8800;
     margin: 2%;
     line-height: 50px;
 }
+@media screen and (max-width: 414px){
+    #h1-contact{
+        line-height: 30px;
+        font-size: 25px;
+        padding: 5%;
+    }
+    .row{
+        display: block;
+    }
+    input{
+        width: 100%;
+        max-width: 398px;
+    }
+    .label{
+        font-size: 1.2em;
+    }
+  }
 form{
     display: flex;
     flex-direction: column;

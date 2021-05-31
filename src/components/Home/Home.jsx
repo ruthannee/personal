@@ -27,7 +27,7 @@ const Home = () => (
                     <LinkedinBrandIcon size={30} />
                 </a>
                 <a rel="noopener noreferrer" href='https://www.datacamp.com/profile/annecarvalho' target="_blank" title="Datacamp">
-                    <DatacampBrandIcon size={30}/>
+                    <DatacampBrandIcon size={30} />
                 </a>
                 <a rel="noopener noreferrer" href='https://www.hackerrank.com/anne_carvalho' target="_blank" title="HackerRank">
                     <FontAwesomeIcon icon={faHackerrank} />
