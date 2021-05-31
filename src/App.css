@@ -67,3 +67,15 @@ code:after {
   font-weight: 400 !important;
   border: 2px solid #efb28f !important;
 }
+
+@media screen and (max-width: 414px){
+  .div-all{
+    margin: 0
+  }
+  h1, #h1-title{
+    font-size: 30px;
+  }
+  p{
+    font-size: 18px;
+  }
+}
