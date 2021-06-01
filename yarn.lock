@@ -3024,8 +3024,8 @@
 "dns-equal@^1.0.0":
   "version" "1.0.0"
 
-"dns-packet@^1.3.1":
-  "version" "1.3.1"
+"dns-packet@^1.3.2":
+  "version" "1.3.2"
   dependencies:
     "ip" "^1.1.0"
     "safe-buffer" "^5.0.1"
@@ -3453,7 +3453,7 @@
 "exec-sh@^0.2.0":
   "version" "0.2.2"
   dependencies:
-    "merge" "^1.2.0"
+    "merge" "^2.1.1"
 
 "execa@^0.10.0":
   "version" "0.10.0"
@@ -4295,8 +4295,8 @@
 "ignore@^4.0.6":
   "version" "4.0.6"
 
-"immer@1.7.2":
-  "version" "1.7.2"
+"immer@8.0.1":
+  "version" "8.0.1"
 
 "import-cwd@^2.0.0":
   "version" "2.1.0"
@@ -4711,7 +4711,7 @@
   "resolved" "https://registry.npmjs.org/isomorphic-fetch/-/isomorphic-fetch-2.2.1.tgz"
   "version" "2.2.1"
   dependencies:
-    "node-fetch" "^1.0.1"
+    "node-fetch" "^2.6.1"
     "whatwg-fetch" ">=0.10.0"
 
 "isstream@~0.1.2":
@@ -5556,8 +5556,8 @@
   dependencies:
     "readable-stream" "^2.0.1"
 
-"merge@^1.2.0":
-  "version" "1.2.1"
+"merge@^2.1.1":
+  "version" "2.1.1"
 
 "merge2@^1.2.3":
   "version" "1.4.1"
@@ -5725,7 +5725,7 @@
 "multicast-dns@^6.0.1":
   "version" "6.2.3"
   dependencies:
-    "dns-packet" "^1.3.1"
+    "dns-packet" "^1.3.2"
     "thunky" "^1.0.2"
 
 "mute-stream@0.0.7":
@@ -5763,10 +5763,10 @@
   dependencies:
     "lower-case" "^1.1.1"
 
-"node-fetch@^1.0.1":
+"node-fetch@^2.6.1":
   "integrity" "sha512-NhZ4CsKx7cYm2vSrBAr2PvFOe6sWDf0UYLRqA6svUYg7+/TSfVAu49jYC4BvQ4Sms9SZgdqGBgroqfDhJdTyKQ=="
-  "resolved" "https://registry.npmjs.org/node-fetch/-/node-fetch-1.7.3.tgz"
-  "version" "1.7.3"
+  "resolved" "https://registry.npmjs.org/node-fetch/-/node-fetch-2.6.1.tgz"
+  "version" "2.6.1"
   dependencies:
     "encoding" "^0.1.11"
     "is-stream" "^1.0.1"
@@ -7019,7 +7019,7 @@
     "global-modules" "1.0.0"
     "globby" "8.0.1"
     "gzip-size" "5.0.0"
-    "immer" "1.7.2"
+    "immer" "8.0.1"
     "inquirer" "6.2.0"
     "is-root" "2.0.0"
     "loader-utils" "1.1.0"
@@ -7618,7 +7618,7 @@
     "range-parser" "~1.2.1"
     "statuses" "~1.5.0"
 
-"serialize-javascript@^1.4.0":
+"serialize-javascript@^3.1.0":
   "version" "1.9.1"
 
 "serve-index@^1.7.2":
@@ -8099,7 +8099,7 @@
     "cacache" "^11.0.2"
     "find-cache-dir" "^2.0.0"
     "schema-utils" "^1.0.0"
-    "serialize-javascript" "^1.4.0"
+    "serialize-javascript" "^3.1.0"
     "source-map" "^0.6.1"
     "terser" "^3.8.1"
     "webpack-sources" "^1.1.0"
@@ -8333,7 +8333,7 @@
     "cacache" "^10.0.4"
     "find-cache-dir" "^1.0.0"
     "schema-utils" "^0.4.5"
-    "serialize-javascript" "^1.4.0"
+    "serialize-javascript" "^3.1.0"
     "source-map" "^0.6.1"
     "uglify-es" "^3.3.4"
     "webpack-sources" "^1.1.0"
