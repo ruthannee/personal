@@ -1,5 +1,5 @@
 {
-  "name": "create-react-app", 
+  "name": "create-react-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -11,7 +11,9 @@
     "@fortawesome/react-fontawesome": "^0.1.14",
     "@material-ui/core": "^4.11.4",
     "bootstrap": "^4.6.0",
+    "browserslist": "^4.16.6",
     "emailjs-com": "^2.6.4",
+    "postcss": "^8.3.0",
     "react": "^16.6.1",
     "react-bootstrap": "^1.6.0",
     "react-custom-scrollbars": "^4.2.1",
