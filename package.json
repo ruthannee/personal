@@ -14,11 +14,13 @@
     "emailjs-com": "^2.6.4",
     "immer": "^9.0.3",
     "merge": "^2.1.1",
+    "node-notifier": "^10.0.0",
     "normalize-url": "^6.1.0",
     "npm": "^7.19.0",
     "react": "^16.6.1",
     "react-bootstrap": "^1.6.0",
     "react-custom-scrollbars": "^4.2.1",
+    "react-dev-utils": "^11.0.4",
     "react-dom": "^16.6.1",
     "react-particles-js": "^3.4.1",
     "react-recaptcha-google": "^1.1.1",
@@ -26,6 +28,7 @@
     "react-scripts": "2.1.1",
     "react-toastify": "^7.0.4",
     "serialize-javascript": "^6.0.0",
+    "sockjs": "^0.3.21",
     "webpack-dev-server": "^3.11.2"
   },
   "scripts": {
