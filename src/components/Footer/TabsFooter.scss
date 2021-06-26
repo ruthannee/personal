@@ -1,3 +1,7 @@
+$bgColor: #000014;
+$white: #ffffff;
+$orange: #ff8800;
+
 .links {
     /* margin-bottom: 1%; */
     position: fixed;
@@ -6,7 +10,7 @@
     box-shadow: 0px -7px 15px 8px #0000007d;
     padding: 1rem 0;
     z-index: 2;
-    background: #000014
+    background: $bgColor
 }
 @media screen and (min-width: 280px) and (max-width: 311px){
     .links{
@@ -26,18 +30,18 @@
 
 #link {
     margin: 0 10px;
-    color: #fff;
+    color: $white;
     cursor: pointer;
     text-decoration: none;
     transition: all 0.2s ease;
 }
 #link:hover, #link:focus{
     transform: scale(1.5);
-    border-bottom: 3px solid #ff8800;
+    border-bottom: 3px solid $orange;
     border-radius: 5px;
 }
 .activeClass{
-    border-bottom: 3px solid #ff8800;
+    border-bottom: 3px solid $orange;
     border-radius: 5px;
 }
 .tabs {

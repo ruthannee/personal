@@ -12,7 +12,7 @@ const About = () => (
                     Meu nome é Ruth Anne, resido em Salvador-BA, tenho 26 anos e atualmente trabalho como desenvolvedora
                     na <a id="ref" href="https://solutis.com.br/" rel="noopener noreferrer" target="_blank">Solutis Tecnologias</a>.
                 </p>
-                <p>
+                <p id="content">
                     Sou tecnóloga em Análise e Desenvolvimento de Sistemas (2017), bacharela em Engenharia de Software (2020), pela <a id="ref"
                     href="https://www.ucsal.br/" rel="noopener noreferrer" target="_blank"> Universidade Católica do Salvador - UCSAL</a>, e,
                     atualmente, sou pós graduanda em Ciências de Dados e Big Data, pela <a id="ref" href="https://www.pucminas.br/" 

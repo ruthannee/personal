@@ -5,7 +5,7 @@ import Sobre from '../About/About';
 // import Habilidades from '../Skills/Skills';
 import Curriculo from '../Curriculum/Curriculum';
 import Contato from '../Contact/Contact';
-import './TabsFooter.css';
+import './TabsFooter.scss';
 
 function TabsFooter() {
     const [isOpen, setOpen] = useState(false);
