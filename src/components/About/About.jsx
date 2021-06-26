@@ -10,9 +10,13 @@ const About = () => (
             <div className='div-left'>
                 <p id="content">
                     Meu nome é Ruth Anne, resido em Salvador-BA, tenho 26 anos e atualmente trabalho como desenvolvedora
-                    front-end na <a id="ref" href="https://solutis.com.br/" rel="noopener noreferrer" target="_blank">Solutis Tecnologias</a>.
-                    Sou tecnóloga em Análise e Desenvolvimento de Sistemas (2017) e bacharela em Engenharia de Software (2020), pela <a id="ref"
-                        href="https://www.ucsal.br/" rel="noopener noreferrer" target="_blank"> Universidade Católica do Salvador - UCSAL</a>.
+                    na <a id="ref" href="https://solutis.com.br/" rel="noopener noreferrer" target="_blank">Solutis Tecnologias</a>.
+                </p>
+                <p>
+                    Sou tecnóloga em Análise e Desenvolvimento de Sistemas (2017), bacharela em Engenharia de Software (2020), pela <a id="ref"
+                    href="https://www.ucsal.br/" rel="noopener noreferrer" target="_blank"> Universidade Católica do Salvador - UCSAL</a>, e,
+                    atualmente, sou pós graduanda em Ciências de Dados e Big Data, pela <a id="ref" href="https://www.pucminas.br/" 
+                    rel="noopener noreferrer" target="_blank">Pontifícia Universidade Católica de Minas Gerais - PUC Minas</a>.
                 </p>
                 <p id="content">
                     Ainda na universidade, desenvolvi uma paixão pela área de Ciências de Dados, na qual tenho projetos e dedicação
