@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { NavLink, Switch, Route } from 'react-router-dom';
-import Inicio from '../Home/Home';
-import Sobre from '../About/About';
-// import Habilidades from '../Skills/Skills';
-import Curriculo from '../Curriculum/Curriculum';
-import Contato from '../Contact/Contact';
+import Inicio from '../../views/Home/Home';
+import Sobre from '../../views/About/About';
+// import Habilidades from '../../views/Skills/Skills';
+import Curriculo from '../../views/Curriculum/Curriculum';
+import Contato from '../../views/Contact/Contact';
 import './TabsFooter.scss';
 
 function TabsFooter() {

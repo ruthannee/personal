@@ -1,6 +1,6 @@
 import React from "react";
-import ContactForm from '../Contact/ContactForm';
-import CustomScrollbar from '../CustomScrollbar/CustomScrollbar';
+import ContactForm from '../../components/ContactForm/ContactForm';
+import CustomScrollbar from '../../components/CustomScrollbar/CustomScrollbar';
 
 const Contact = () => (
   <CustomScrollbar>

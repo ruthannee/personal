@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSpotify, faGithubAlt, faTelegramPlane, faHackerrank } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { LinkedinBrandIcon, DatacampBrandIcon } from '@datacamp/waffles-icons';
-import CustomScrollbar from '../CustomScrollbar/CustomScrollbar';
+import CustomScrollbar from '../../components/CustomScrollbar/CustomScrollbar';
 
 const Home = () => (
     <CustomScrollbar>

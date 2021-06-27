@@ -1,5 +1,5 @@
 import React from "react";
-import CustomScrollbar from '../CustomScrollbar/CustomScrollbar';
+import CustomScrollbar from '../../components/CustomScrollbar/CustomScrollbar';
 import { Button } from '@material-ui/core';
 import cvpt from "../../documents/CV-PT_Ruth-Anne.pdf";
 import cven from "../../documents/CV-EN_Ruth-Anne.pdf";

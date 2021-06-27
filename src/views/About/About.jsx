@@ -1,7 +1,7 @@
 import React from "react";
 import './About.scss';
-import CustomScrollbar from '../CustomScrollbar/CustomScrollbar';
-import Canvas from './WordRender';
+import CustomScrollbar from '../../components/CustomScrollbar/CustomScrollbar';
+import Canvas from '../../components/WordSphere/WordRender';
 
 const About = () => (
     <CustomScrollbar>

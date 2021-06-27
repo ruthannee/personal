@@ -1,5 +1,5 @@
 import React from "react";
-import CustomScrollbar from '../CustomScrollbar/CustomScrollbar';
+import CustomScrollbar from '../../components/CustomScrollbar/CustomScrollbar';
 
 const Skills = () => (
   <CustomScrollbar>
