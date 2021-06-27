@@ -34,6 +34,11 @@ export default function WordSphere(canvas, words, counts, options) {
   canvas.style.height = `${height}px`;
   ctx.scale(2, 2);
 
+  if (window.matchMedia("(max-width:700px)").matches) {
+    document.getElementById("canvas").style.maxwidth = '560px';
+    document.getElementById("canvas").style.width = '100%';
+  }
+
   // scrolling
   let clicked = false,
     lastX, lastY;
