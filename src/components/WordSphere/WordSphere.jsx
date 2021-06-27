@@ -9,7 +9,7 @@ export default function WordSphere(canvas, words, counts, options) {
   const {
     width = 560,
     height = 430,
-    radius = 180,
+    radius = 175,
     fontSize = 22,
     tilt = 0,
     initialVelocityX = 0,
