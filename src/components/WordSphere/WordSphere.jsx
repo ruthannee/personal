@@ -35,8 +35,10 @@ export default function WordSphere(canvas, words, counts, options) {
   ctx.scale(2, 2);
 
   if (window.matchMedia("(max-width:700px)").matches) {
-    document.getElementById("canvas").style.maxwidth = '560px';
     document.getElementById("canvas").style.width = '100%';
+  } else if (window.matchMedia("(max-width: 1280px)").matches) {
+    document.getElementById("canvas").style.maxWidth = '500px';
+    document.getElementById("canvas").style.maxHeight = '390px';
   }
 
   // scrolling
