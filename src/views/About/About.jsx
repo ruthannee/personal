@@ -9,8 +9,8 @@ const About = () => (
             <h1 id="h1-title">Sobre</h1>
             <div className='div-left'>
                 <p id="content">
-                    Meu nome é Ruth Anne, resido em Salvador-BA, tenho 26 anos e atualmente trabalho como desenvolvedora
-                    na <a id="ref" href="https://solutis.com.br/" rel="noopener noreferrer" target="_blank">Solutis Tecnologias</a>.
+                    Meu nome é Ruth Anne, resido em Salvador-BA, tenho 27 anos e atualmente trabalho como Application Developer
+                    na <a id="ref" href="https://www.ibm.com/" rel="noopener noreferrer" target="_blank">IBM</a>.
                 </p>
                 <p id="content">
                     Sou tecnóloga em Análise e Desenvolvimento de Sistemas (2017), bacharela em Engenharia de Software (2020), pela <a id="ref"
