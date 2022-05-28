@@ -2,16 +2,17 @@ import React, { useRef, useEffect } from 'react';
 import wordSphere from './WordSphere';
 
 const words = [
-    'MVC', 'JavaScript', 'Java', 'PostgreSQL', 
-    'CSS', 'HTML5', 'C#', 'CRISP-DM',
-    'Bootstrap', 'EDA', 'Git', 'Clustering', 
-    'ReactJS', 'Linguagem R', 'SQL', 'KDD', 
-    'Python', 'Maven', 'Data Cleaning', 'Feature Selection'
-    //20
+    'MVC', 'JavaScript', 'SQL', 'ETL', 
+    'SSIS', 'Azure', 'PostgreSQL', 'Java',
+    'CSS', 'HTML5', 'C#', 'Git', 'R Lang',
+    'EDA', 'CRISP-DM', 'Clustering', 
+    'ReactJS', 'PowerCenter', 'KDD', 
+    'Python', 'Data Cleaning', 'Feature Selection'
+    //22
 ];
 
 //words distribution
-const counts = [1, 2, 7, 7, 2, 1];
+const counts = [1, 4, 6, 6, 4, 1];
 
 const options = {
     tilt: Math.PI / 9,
